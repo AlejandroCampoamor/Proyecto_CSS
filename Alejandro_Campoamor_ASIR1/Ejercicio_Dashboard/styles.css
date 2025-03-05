@@ -1,0 +1,88 @@
+/* 
+Nombre: Alejandro Campoamor
+Curso: ASIR1
+Fecha: 4/3/2025 
+Ejercicio: Ejercicio Dashboard
+*/
+/* En el body realizamos la disposición del grid */
+body {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "nav main";
+    grid-template-columns: 20% 80%;
+}
+/* Justificamos el contenido de forma que quede espaciado en la cabecera */
+header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: darkgray;
+    border:1px solid black;
+}
+
+/*  */
+nav {
+    grid-area: nav;
+    border:1px solid black;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    margin-bottom: 15px;
+}
+/* Repartimos el espacio de forma equitativa para cada carta */
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    padding: 5px;
+    gap: 5px;
+    border:1px solid black;
+}
+#boton {
+    height: 50px;
+    width: 50px;
+}
+.card {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black; 
+    border-radius: 10px;
+}
+
+/* Para cada carta, hemos asignado un color específico cuando se pasa 
+el ratón por encima. También he generalizado que aumente su tamaño
+un 15% */
+.card:hover {
+    transform: scale(1.15);
+}
+.card:nth-child(1) {
+    background-color: yellow;
+}
+.card:hover:nth-child(1) {
+    background-color: aqua;
+}
+.card:nth-child(2) {
+    background-color: aqua;
+}
+.card:hover:nth-child(2) {
+    background-color: yellow;
+}
+.card:nth-child(3) {
+    background-color: tomato;
+}
+.card:hover:nth-child(3) {
+    background-color: slateblue;
+}
+.card:nth-child(4) {
+    background-color: slateblue;
+}
+.card:hover:nth-child(4) {
+    background-color: tomato;
+}

@@ -1,0 +1,23 @@
+/* 
+Nombre: Alejandro Campoamor
+Curso: ASIR1
+Fecha: 04/03/2025
+Ejercicio: Ejercicio 4
+*/
+.padre {
+    display:flex;
+    justify-content: space-around;
+}
+.hijo {
+    height: 100px;
+    width: 100px;
+}
+.hijo:nth-child(1) {
+    background-color: red;
+}
+.hijo:nth-child(2) {
+    background-color: aqua;
+}
+.hijo:nth-child(3) {
+    background-color: blueviolet;
+}

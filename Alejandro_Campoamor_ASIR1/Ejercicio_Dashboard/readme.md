@@ -1,0 +1,1 @@
+Crear un dashboard (panel de control) que tenga una barra lateral de navegación, una cabecera y una cuadrícula con tarjetas de información. Además, deben agregar interactividad con hover y transiciones animadas.

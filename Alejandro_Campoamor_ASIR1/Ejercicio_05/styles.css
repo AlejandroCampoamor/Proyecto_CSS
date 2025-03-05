@@ -1,0 +1,42 @@
+/* 
+Nombre: Alejandro Campoamor
+Curso: ASIR1
+Fecha: 04/03/2025
+Ejercicio: Ejercicio 5
+*/
+
+/* He dado fondo y he marcado con borde el contenedor para que quedase más
+visual la diferencia de px entre la primera fila y la segunda */
+.flex {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px;
+    gap: 15px;
+    border:1px solid black;
+    padding: 5px;
+    background-color: lightgrey;
+}
+.item {
+    border:1px solid black;
+    width: 100px;
+    height: 100px;
+}
+.item:nth-child(1){
+    background-color: aliceblue;
+}
+.item:nth-child(2) {
+    background-color: aqua;
+}
+.item:nth-child(3) {
+    background-color: blueviolet;
+}
+.item:nth-child(4) {
+    background-color: cadetblue;
+}
+.item:nth-child(5) {
+    background-color: chartreuse;
+}
+.item:nth-child(6) {
+    background-color: chocolate;
+}
